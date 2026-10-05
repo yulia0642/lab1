@@ -110,7 +110,7 @@ python -m toolkit --help
 
 Названия переменных и функций должны быть понятными и отражать их назначение.
 
-Функции имеют аннотации типов и docstring.
+Функции имеют аннотации типов и `docstring`.
 
 Вычислительная логика отделена от интерфейса командной строки. Функции калькулятора и конвертера не используют `input()` и `print()`.
 
@@ -127,7 +127,7 @@ python -m toolkit calc "EXPRESSION"
 Примеры:
 
 ``` shell
-python -m toolkit calc "2+3\*4"
+python -m toolkit calc "2+3*4"
 ```
 
 Результат:
@@ -149,7 +149,7 @@ python -m toolkit calc "10 / 4"
 Поддерживается унарный знак:
 
 ``` shell
-python -m toolkit calc "2 \* -3"
+python -m toolkit calc "2 * -3"
 ```
 
 Результат:
@@ -237,19 +237,19 @@ python -m pytest
 Для запуска только тестов калькулятора:
 
 ``` shell
-python -m pytest tests/test\_calculator.py
+python -m pytest tests/test_calculator.py
 ```
 
 Для запуска тестов конвертера:
 
 ``` shell
-python -m pytest tests/test\_converter.py
+python -m pytest tests/test_converter.py
 ```
 
 Для запуска тестов CLI:
 
 ``` shell
-python -m pytest tests/test\_cli.py
+python -m pytest tests/test_cli.py
 ```
 
 Тесты проверяют как успешные случаи, так и ошибки.
