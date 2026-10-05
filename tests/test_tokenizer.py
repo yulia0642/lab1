@@ -7,7 +7,7 @@ from toolkit.tokenizer import tokenize
 def test_tokenize_integer():
     assert tokenize("25") == [
         ("NUMBER", "25"),
-    ]  # Я ожидаю, что функция tokenize("25") вернёт именно такой список
+    ]
 
 
 def test_tokenize_expression():
