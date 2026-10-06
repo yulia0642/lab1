@@ -10,8 +10,8 @@ from toolkit.errors import (
 def convert(value: str, from_unit: str, to_unit: str) -> float:
     """Convert a value from one unit to another."""
 
-    from_unit = from_unit.lower()
-    to_unit = to_unit.lower()
+    from_unit = from_unit.strip().lower()
+    to_unit = to_unit.strip().lower()
 
     if from_unit not in UNIT_GROUPS:
         raise UnknownUnitError(f"unknown unit: {from_unit}")
